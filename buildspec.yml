@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - 'STAGE=$ENV bash ${PWD}/build.sh'
+  pre_build:
+    commands:
+      - 'STAGE=$ENV bash ${PWD}/unit_test.sh'
+  build:
+    commands:
+      - 'STAGE=$ENV bash ${PWD}/deploy.sh'
+  post_build:
+    commands:
+      - 'STAGE=$ENV bash ${PWD}/integration_test.sh'
+cache:
+  paths:
+    - '**/*'
+artifacts:
+  files:
+    - '**/*'

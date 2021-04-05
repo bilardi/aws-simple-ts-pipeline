@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import "source-map-support/register";
 import * as cdk from "@aws-cdk/core";
-import { PipelineStack } from "../lib/index";
+import { PipelineStack } from "aws-simple-pipeline";
 
 const projectName = "aws-simple-pipeline";
 const githubOwner = "bilardi";

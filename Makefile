@@ -1,6 +1,6 @@
 # AWS Pipeline Makefile
 
-PACKAGE_NAME = "aws-simple-sample"
+PACKAGE_NAME = "aws-simple-pipeline"
 YOUR_USERNAME = "bilardi"
 
 .PHONY: help # print this help list
@@ -13,7 +13,7 @@ doc:
 
 .PHONY: clean # remove packaging files
 clean:
-	rm -rf dist node_modules
+	rm -rf dist node_modules cdk.out
 
 .PHONY: install # install packages from npm
 install: clean
@@ -29,7 +29,7 @@ ltest: test
 
 .PHONY: itest # install package locally and test it
 itest: ltest
-	npm link src; cd example; npm link $(PACKAGE_NAME); npx ts-node example.ts; cd -
+	npm link lib; cd bin; npm link $(PACKAGE_NAME); npx ts-node example.ts; cd -
 
 .PHONY: btest # build package on npm in beta version
 btest: itest

@@ -1,6 +1,16 @@
+*#*#
+*~
+
 *.ts
 !*.d.ts
 
+tsconfig.json
+lib
+tests
+docs
+bin
+
 # CDK asset staging directory
+cdk.json
 .cdk.staging
 cdk.out
