@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.2] - 2021-05-17
+
+### Added
+- improve tests
+
+## [0.2.1] - 2021-04-08
+
+### Added
+- the library
+
 ## [0.2.0] - 2021-04-08
 
 ### Added
@@ -15,5 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - the documentation by sphinx
 - the example
 
-[Unreleased]: https://github.com/bilardi/typescript-prototype/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/bilardi/typescript-prototype/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/bilardi/typescript-prototype/releases/tag/v0.2.2
+[0.2.1]: https://github.com/bilardi/typescript-prototype/releases/tag/v0.2.1
 [0.2.0]: https://github.com/bilardi/typescript-prototype/releases/tag/v0.2.0

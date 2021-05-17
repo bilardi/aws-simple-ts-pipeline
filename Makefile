@@ -29,7 +29,7 @@ ltest: test
 
 .PHONY: itest # install package locally and test it
 itest: ltest
-	npm link lib; cd bin; npm link $(PACKAGE_NAME); npx ts-node example.ts; cd -
+	npm link lib; cd bin; npm link $(PACKAGE_NAME); cdk synth -a 'npx ts-node example.ts'; cd -
 
 .PHONY: btest # build package on npm in beta version
 btest: itest
